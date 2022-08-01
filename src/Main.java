@@ -3,5 +3,6 @@ public class Main {
         int[] sales = {10, 14, 22, 18, 30, 26};
         SalesManager month = new SalesManager(sales);
         System.out.println(" Наибольшее количество реализованной продукции за месяц " + month.max());
+        System.out.println(" Среднее количество реализованной продукции за месяц " + month.average());
     }
 }
