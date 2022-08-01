@@ -15,20 +15,21 @@ public class SalesManager {
         return max;
     }
 
-public int average() {
-    int sum = 0;
-    for(int i : sales) {
-        sum += i;
-    }
-    return(sum - this.max() - this.min())/ (sales.length - 2);
-    }
-    public int min() {
-    int min = sales[0];
-    for (int sale : sales) {
-        if (sale < min) {
-            min = sale;
+    public long average() {
+        long sum = 0;
+        for (long i : sales) {
+            sum += i;
         }
+        return (sum - this.max() - this.min()) / (sales.length - 2);
     }
-    return min;
-}
+
+    public long min() {
+        long min = sales[0];
+        for (long sale : sales) {
+            if (sale < min) {
+                min = sale;
+            }
+        }
+        return min;
+    }
 }
